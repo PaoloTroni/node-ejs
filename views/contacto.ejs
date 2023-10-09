@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./contacto.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensive - <%=pageTitle%></title>
+  </head>
+  <body>
+    <%- include("./template/header") %>
+    <main>
+      <section class="contact-section">
+        <ul>
+          <li>
+            <img src="../iconos/icono-casa.png" alt="icono casa" />
+            <ul>
+              <li class="li-title">California United States</li>
+              <li class="li-sub">Santa Monica bullevard</li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="../iconos/icono-auriculares.png"
+              alt="icono auriculares"
+            />
+            <ul>
+              <li class="li-title">00 (440) 9865 562</li>
+              <li class="li-sub">Mon to Fri 9am to 6pm</li>
+            </ul>
+          </li>
+
+          <li>
+            <img src="../iconos/icono-sobre.png" alt="icono sobre" />
+            <ul>
+              <li class="li-title">support@colorlib.com</li>
+              <li class="li-sub">Send us your query anytime!</li>
+            </ul>
+          </li>
+        </ul>
+
+        <form action="/submit-form" method="POST">
+          <div>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+              name="email"
+              required
+            />
+
+            <input
+              type="text"
+              id="subject"
+              placeholder="Enter Subject"
+              name="subject"
+              required
+            />
+          </div>
+
+          <textarea
+            id="message"
+            placeholder="Enter Message"
+            name="message"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn-form">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

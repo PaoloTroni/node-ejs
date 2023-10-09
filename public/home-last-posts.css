@@ -1,0 +1,39 @@
+.last-posts {
+  display: flex;
+  justify-content: space-around;
+  width: 55em;
+}
+
+.last-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.last-posts li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.last-posts img {
+  width: 17em;
+  height: auto;
+}
+
+.last-posts h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 15em;
+}
+
+.last-posts p {
+  margin-top: 0.1rem;
+  color: #808080;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}

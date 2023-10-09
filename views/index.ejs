@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./home-principal.css" />
+    <link rel="stylesheet" href="./home-last-posts.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensive - <%=pageTitle%></title>
+  </head>
+  <body>
+    <%- include("./template/header") %>
+    <main>
+      <section class="principal">
+        <img src="<%=imageHome%>" alt="<%=descriptionImage%>" />
+        <div>
+          <h2><%=postTitle%></h2>
+          <h3><%=postSubtitle%></h3>
+          <p><%=datePost%></p>
+        </div>
+      </section>
+      <section class="last-posts">
+        <ul>
+          <% lastPosts.forEach(post => { %>
+          <li>
+            <img
+              src="<%= post.imageURL %>"
+              alt="<%= post.descriptionImage %>"
+            />
+            <button><%= post.textButton %></button>
+            <h2><%= post.postTitle %></h2>
+            <p><%= post.timeSincePublication %></p>
+          </li>
+          <% }) %>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

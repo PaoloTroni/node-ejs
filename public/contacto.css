@@ -1,0 +1,72 @@
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  width: 54em;
+  margin-top: 5em;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section ul > li {
+  margin-bottom: 0;
+  display: flex;
+}
+
+.contact-section ul li img {
+  width: 1em;
+  height: auto;
+  margin: 0.6em 0.6em 2em 0.7em;
+}
+
+.contact-section ul li ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.li-title {
+  font-weight: bold;
+}
+
+.li-sub {
+  color: #808080;
+  font-size: 0.8em;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-section form div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+.contact-section form input {
+  width: 13rem;
+  margin: 1em 0 1em 0;
+}
+
+.contact-section form textarea {
+  width: 13em;
+  height: 11em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+}
+
+.contact-section form textarea {
+  width: 13em;
+  height: 9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+}
+.btn-form {
+  margin: 8em 1em 2em 2em;
+}

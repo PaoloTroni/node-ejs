@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="./global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensive - <%=pageTitle%></title>
+  </head>
+  <body>
+    <%- include("./template/header") %>
+    <main>
+      <section class="centred-position centred-text">
+        <p class="bold-text">Ha ocurrido el siguiente error:</p>
+        <p class="error"><%=infoError%></p>
+        <p>
+          Por favor, si el error no es por datos mal insertados, comunique con
+          el desarrollador de la página.
+        </p>
+        <p>
+          En caso contrario, inserte correctamente los datos en el formulario.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
